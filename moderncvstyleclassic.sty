@@ -43,6 +43,7 @@
 \renewcommand*{\faxsymbol}{\marvosymbol{117}~}
 \renewcommand*{\emailsymbol}{\marvosymbol{66}~}
 \renewcommand*{\homepagesymbol}{{\Large\marvosymbol{205}}~}
+\renewcommand*{\webpagesymbol}{{\Large\marvosymbol{207}}~}
 
 
 %-------------------------------------------------------------------------------
@@ -117,7 +118,11 @@
       \ifthenelse{\isundefined{\@homepage}}{}{%
 	\ifthenelse{\equal{\@homepagetitle}{}}% \homepagetitle could be empty
 	{\makenewline\homepagesymbol\httplink{\@homepage}}%
-	{\makenewline\homepagesymbol\httplink[\@homepagetitle]{\@homepage}}}% 
+	{\makenewline\homepagesymbol\httplink[\@homepagetitle]{\@homepage}}}%
+     \ifthenelse{\isundefined{\@webpage}}{}{%
+    	\ifthenelse{\equal{\@webpagetitle}{}}% webpagetitle could be empty
+    	{\makenewline{\webpagesymbol\httplink{\@webpage}}}%
+    	{\makenewline{\webpagesymbol\httplink[\@webpagetitle]{\@webpage}}}}%
       \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}%
     \end{tabular}
   }%
@@ -273,6 +278,10 @@
 	\ifthenelse{\equal{\@homepagetitle}{}}% \homepagetitle could be empty
 	{\makenewline\homepagesymbol\httplink{\@homepage}}%
 	{\makenewline\homepagesymbol\httplink[\@homepagetitle]{\@homepage}}}%
+    \ifthenelse{\isundefined{\@webpage}}{}{%
+	\ifthenelse{\equal{\@webpagetitle}{}}% webpagetitle could be empty
+	{\addtomaketitle{\webpagesymbol\httplink{\@webpage}}}%
+	{\addtomaketitle{\webpagesymbol\httplink[\@webpagetitle]{\@webpage}}}}%
       \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}}%
     \end{minipage}\\[1em]
   % recipient block
