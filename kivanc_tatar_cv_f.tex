@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{lipsum}
+\usepackage{amsmath}
+\usepackage{datetime}
+\usepackage{url}
+\usepackage[scaled]{beramono}
+\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+\usepackage[T1]{fontenc}
+
+\usepackage[scale=0.87]{geometry} % Reduce document margins
+\linespread{1.2}
+\setlength{\hintscolumnwidth}{2.16cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{K{\i}van\c{c}} % Your first name
+\familyname{Tatar} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Assistant Professor \\ in Interactive AI}
+\address{ Madängsgatan 9, Apt. 1401\\}{ 
+417 02 Gothenburg, Sweden}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+	%\ttfamily
+	%\asciifamily
+	\makecvtitle % Print the CV title
+	
+\begin{center} \LARGE 1. Personal details and the date of the CV\end{center}
+\hline
+
+\cvitem{Email}{\href{mailto:info@kivanctatar.com}{info@kivanctatar.com}}
+\cvitem{Phone}{+46 72 1779088}
+\cvitem{Research Group}{\href{https://aicomparts.com}{aicomparts.com}} 
+\cvitem{Personal Page}{\href{https://kivanctatar.com}{kivanctatar.com}} 
+\cvitem{ORCID}{\href{https://orcid.org/0000-0003-4133-8641}{0000-0003-4133-8641}} 
+\cvitem{Google Scholar}{\url{https://scholar.google.com/citations?user=jLujPGQAAAAJ}} 
+\cvitem{}{The date of this CV is \today.}
+
+\begin{center} \LARGE 2. Degrees\end{center}
+\hline
+
+\cvitem{07-2019 09-2014}{Ph.D., Interactive Arts and Technology (SIAT), Simon Fraser University (SFU), \textit{Greater Vancouver, BC Canada}}
+
+%}; GPA -- 4.00/4.33}
+
+\cvitem{2012--2014}{M.Mus., Sonic Arts, Center for Advanced Studies in Music (MIAM), \.{I}stanbul Technical University (ITU), \.{I}stanbul, Turkey}
+%; GPA -- 3.58/4.00} 
+\cvitem{2012--2006}{B.Sc., Electrical and Electronics Engineering, Middle East Technical University (METU), \textit{Ankara, Turkey}}
+
+\begin{center} \LARGE 3. Other education and expertise\end{center}
+\hline
+
+\begin{center} \LARGE 4. Language Skills\end{center}
+\hline
+
+\cvitem{Turkish}{Native}
+\cvitem{English}{Proficient}
+
+\begin{center} \LARGE 5. Current Employment\end{center}
+\hline
+
+\cvitem{2026-10 \\ 2021-10}{\textbf{Assistant Professor} (apulaislehtori) in Interactive AI; Data Science and AI division, Computer Science and Engineering, Chalmers University of Technology; Gothenburg, Sweden}
+
+\begin{center} \LARGE 6. Previous work experience\end{center}
+\hline
+
+\cvitem{04-2020 10-2019}{\textbf{Post-Doctoral Researcher}, Institute for Computer Music and Sound Technologies, Zurich University of Arts, Switzerland}
+\cvitem{2020-08 2019-09}{\textbf{Post-Doctoral Fellow}, (part-time) Metacreation Lab, Simon Fraser University, Greater Vancouver, BC Canada}
+\cvitem{2019-03 2014-09}{\textbf{Research Assistant}, Metacreation Lab, Simon Fraser University, Greater Vancouver, BC, Canada}
+\cvitem{2011 Summer}{\textbf{Intern Engineer} Turkish Radio and Television Foundation, Ankara}
+\cvitem{2011-01 2009-09}{\textbf{Student Assistant}, Fine Arts and Music Department, METU, Ankara, Turkey}
+\cvitem{2010 Summer}{\textbf{Intern Engineer}, Esenbo\u{g}a Airport, Ankara, Turkey }
+
+\begin{center} \LARGE 7. Career breaks\end{center}
+\hline
+
+\cvitem{}{I had no career breaks.}
+
+\begin{center} \LARGE 8. Research funding and grants\end{center}
+\hline
+
+\cvitem{}{\small PI: Principal Investigator, CI: Co-Investigator, CA: Co-Applicant, CL: Collaborator}
+    \cvitem{}{\small NSERC: Natural Sciences and Engineering Research Council of Canada}
+    \cvitem{}{\small SSHRC: Social Sciences and Humanities Research Council of Canada}
+    \cvitem{}{\small CCA: Canada Council for the Arts}
+    \cvitem{}{\small CHAIR: Chalmers AI Research Centre}
+    \input{part2c-projects-successful}
+
+\newpage
+
+\begin{center} \LARGE 9. Research output\end{center}
+\hline
+
+\input{part3-pubs.tex}
+
+\newpage
+\begin{center} \LARGE 10. Research supervision and leadership experience\end{center}
+\hline
+
+\input{part4-supervision.tex}
+
+\begin{center} \LARGE 11. Teaching merits\end{center}
+\hline
+
+\input{part6-pedagogy-training.tex}
+
+\input{part5-course-teaching.tex}
+
+\input{part7-research-leadership.tex}
+
+\begin{center} \LARGE 12. Awards and honours\end{center}
+\hline
+
+\input{part17-awards.tex}
+
+\begin{center} \LARGE 13. Other key academic merits\end{center}
+\hline
+
+\input{part8-external-reviewing.tex}
+
+\input{part9-local-contributions.tex}
+
+\input{part10-academic-org.tex}
+
+\input{part11-paper-reviews.tex}
+
+\input{part12-lectures-research.tex}
+
+\input{part15-residencies.tex}
+
+\begin{center} \LARGE 14. Scientific and Societal Impact\end{center}
+\hline
+
+\input{part13-artworks.tex}
+
+\input{part14-press.tex}
+
+\begin{center} \LARGE 15. Other merits\end{center}
+\hline
+
+\input{part16-music.tex}
+
+\newpage
+
+\cvitem{}{\begin{center}\LARGE CV Overview\end{center}} 
+\hline
+
+\input{part1a-cv_overview}
+
+\end{document}
